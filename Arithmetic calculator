@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Arithmetic calculator {
+    public static void main(String args[]) {
+        
+        Scanner input1 = new Scanner(System.in);
+         Scanner input2 = new Scanner(System.in);
+         Scanner input3 = new Scanner(System.in);
+         System.out.println("Enter your two values");
+         int num1 = input1.nextInt();
+        int num2 = input2.nextInt();
+         
+        System.out.println("Enter your choice:");
+        
+        System.out.println("Enter 1 for addition"+"\n"+"Enter 2 for subtraction"+"\n"+ "Enter 3 for multiplication"+"\n"+"Enter 4 for division");
+        int num3 = input3.nextInt();
+       
+        
+        
+        switch (num3) {
+            case 1:
+            System.out.println("addition is " + (num1+num2));
+            break;
+        
+            case 2:
+                System.out.println("Subtraction is " + (num1-num2));
+                break;
+                
+            case 3:
+                System.out.println("multiplication is " + (num1*num2));
+                break;
+            
+            case 4:
+                System.out.println("division is " + (num1/num2));
+                break;
+          default:
+            System.out.println("some other choice");
+            break;
+        
+       
+    }
+    }
+  }

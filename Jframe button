@@ -1,0 +1,17 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+class Main {
+  public static void main(String[] args) {
+    JFrame f = new JFrame("JFrameInstanceExample");
+
+    JButton b = new JButton("JFrame Button");
+    b.setBounds(100, 50, 150,40);
+
+    f.add(b);
+
+    f.setSize(100,100);
+    f.setLayout(null);
+    f.setVisible(true);
+  }
+}

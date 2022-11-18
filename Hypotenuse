@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+
+    System.out.println("Calculate the Hypotenuse of your triangle!");
+    System.out.println("Enter the base below:");
+    double base = in.nextDouble();
+
+    System.out.println("Enter the height below:");
+    double height = in.nextDouble();
+
+    double hypotenuse= Math.sqrt(base*base + height*height);
+    System.out.println("The hypotenuse is " + hypotenuse);
+  }
+}

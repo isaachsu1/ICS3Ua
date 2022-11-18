@@ -1,0 +1,24 @@
+class car{
+  public String color= "red";
+  public void display(){
+    System.out.println("Red color");
+  }
+ }
+class shift{
+  public String shift= "manual";
+  public void display1(){
+    System.out.println("manual shift");
+  }
+}
+    
+  
+
+public class Main {
+  public static void main(String[] args) {
+    car car1= new car();
+    car1.display();
+    
+    shift car2= new shift();
+    car2.display1();  
+  }
+}

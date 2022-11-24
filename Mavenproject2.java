@@ -20,8 +20,6 @@ public class Mavenproject2 implements ActionListener{
     private static JTextField passwordText;
     private static JButton button;
     private static JLabel success;
-    private static JLabel destroylabel;
-    private static JButton nukebutton;
     
     
 

@@ -1,0 +1,70 @@
+package com.mycompany.mavenproject3;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+
+/**
+ *
+ * @author isaac
+ */
+public class Mavenproject3 {
+    private static JLabel userlabel;
+    private static JLabel passwordlabel;
+    private static JButton button;
+    private static JButton Hbutton;
+    private static JTextField TextField;
+    private static JLabel playerhp;
+    private static JLabel potionlabel;
+    
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        JPanel panel = new JPanel();
+        frame.setSize(600,600);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        frame.add(panel);
+        
+        panel.setLayout(null);
+        
+        userlabel = new JLabel("Level:");
+        userlabel.setBounds(10,20,80,25);
+        panel.add(userlabel);
+        
+        passwordlabel = new JLabel("Monster HP:");
+        passwordlabel.setBounds(200,20,80,25);
+        panel.add(passwordlabel);
+        
+        playerhp = new JLabel("Player HP:");
+        playerhp.setBounds(10,200,80,25);
+        panel.add(playerhp);
+        
+        potionlabel = new JLabel("Potions:");
+        potionlabel.setBounds(400,200,80,25);
+        panel.add(potionlabel);
+        
+        
+        
+        button = new JButton("Attack!");
+        button.setBounds(10,230,80,25);
+        panel.add(button);
+        
+        Hbutton = new JButton("Heal Up!");
+        Hbutton.setBounds(400,230,80,25);
+        panel.add(Hbutton);
+        
+        TextField = new JTextField(100);
+        TextField.setBounds(10,300,500,200);
+        panel.add(TextField);
+        
+        
+        
+        frame.setVisible(true);
+        
+        
+    }
+    
+    }

@@ -1,0 +1,386 @@
+import javax.swing.JOptionPane;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author isaac
+ */
+public class Quiz {
+
+static int points = 0;
+
+    
+    public static void main(String[] args) {
+        String answer = JOptionPane.showInputDialog(null, "Welcome to Isaac's Geography Quiz.\n"+
+                "Select difficulty\n"+
+                "A. Easy\n" +
+                "B. Medium\n" +
+                "C. Hard");
+        switch (answer){
+            case "A", "a" -> easy();
+            case "B", "b" -> medium();
+            case "C", "c" -> hard();
+
+    }
+    }
+
+    public static void easy() {
+        question1();
+        question2();
+        question3();
+        question4();
+        question5();
+        question7();
+        result1();
+    }
+    public static void medium() {
+        question9();
+        question11();
+        question12();
+        question13();
+        question19();
+        question20();
+        result2();
+    }
+    public static void hard() {
+        
+        question6();
+        question8();
+        question10();
+        question14();
+        question15();
+        question16();
+        question17();
+        question18();
+        result3();
+    }
+
+
+    public static void question1() {
+        String answer = JOptionPane.showInputDialog(null, "Question 1 of 6:\n" +
+                "How many countries does the United States of America border?\n" +
+                "A. 2\n" +
+                "B. 4\n" +
+                "C. 3\n" +
+                "D. 1");
+        switch (answer){
+            case "A", "a" -> points++;
+        }
+    }
+
+
+    public static void question2() {
+        String answer =  JOptionPane.showInputDialog(null, "Question 2 of 6:\n" +
+                "Canada has 10 provinces.\n" +
+                "A. true\n" +
+                "B. false");
+        switch (answer){
+            case "A", "a" -> points++;
+        }
+    }
+
+
+    public static void question3() {
+        String answer =  JOptionPane.showInputDialog(null, "Question 3 of 6:\n" +
+                "Which of the following countries is not in Europe?\n" +
+                "A. Finland \n" +
+                "B. Libya \n" +
+                "C. France \n" +
+                "D. Turkey ");
+        switch (answer){
+            case "B", "b" -> points++;
+        }
+    }
+
+
+    public static void question4() {
+        String answer =  JOptionPane.showInputDialog(null, "Question 4 of 6:\n" +
+                "Which of the following countries is largest?\n" +
+                "A. Vatican \n" +
+                "B. China\n" +
+                "C. America\n" +
+                "D. Canada");
+        switch (answer){
+            case "D", "d" -> points++;
+        }
+    }
+
+
+    public static void question5() {
+        String answer =  JOptionPane.showInputDialog(null, "Question 5 of 6:\n" +
+                "How many countries does Australia border?\n" +
+                "A. 1\n" +
+                "B. 2\n" +
+                "C. 3\n" +
+                "D. 0");
+        switch (answer){
+            case "D", "d" -> points++;
+        }
+    }
+
+
+    public static void question6() {
+        String answer =  JOptionPane.showInputDialog(null, "Question 1 of 8:\n" +
+                "How many stripes does the US flag have?\n" +
+                "A. 50\n" +
+                "B. 13\n" +
+                "C. 12\n" +
+                "D. 10");
+        switch (answer){
+            case "B", "b" -> points++;
+        }
+    }
+
+
+    public static void question7() {
+        String answer = JOptionPane.showInputDialog(null, "Question 6 of 6:\n" +
+                "What is the smallest country in the world?\n" +
+                "A. The Vatican\n" +
+                "B. San Marino\n" +
+                "C. Russia\n" +
+                "D. Albania");
+        switch (answer){
+            case "A", "a" -> points++;
+        }
+    }
+
+
+    public static void question8() {
+        String answer = JOptionPane.showInputDialog(null, "Question 2 of 8:\n" +
+                "Which of the following countries has the smallest population?\n" +
+                "A. Canada\n" +
+                "B. United Kingdom\n" +
+                "C. Taiwan\n" +
+                "D. Mongolia");
+        switch (answer){
+            case "D", "d" -> points++;
+        }
+    }
+
+
+    public static void question9() {
+        String answer = JOptionPane.showInputDialog(null, "Question 1 of 6:\n" +
+                "A land locked country has no access to any oceans.\n" +
+                "A. True\n" +
+                "B. False");
+        switch (answer){
+            case "A", "a" -> points++;
+        }
+    }
+
+
+    public static void question10() {
+        String answer = JOptionPane.showInputDialog(null, "Question 3 of 8:\n" +
+                "Which country has the longest coastline?\n" +
+                "A. Russia\n" +
+                "B. Australia\n" +
+                "C. Canada\n" +
+                "D. Africa");
+        switch (answer){
+            case "C", "c" -> points++;
+        }
+    }
+
+
+    public static void question11() {
+        String answer = JOptionPane.showInputDialog(null, "Question 2 of 6:\n" +
+                "Which how many countries border Switzerland?\n" +
+                "A. 7\n" +
+                "B. 5\n" +
+                "C. 9\n" +
+                "D. 11");
+        switch (answer){
+            case "B", "b" -> points++;
+        }
+    }
+
+
+    public static void question12() {
+        String answer = JOptionPane.showInputDialog(null, "Question 3 of 6:\n" +
+                "Which of the following countries are in Africa?\n" +
+                "A. Kenya\n" +
+                "B. Algeria\n" +
+                "C. Demorcratic Republic of the Congo\n" +
+                "D. All of the above");
+        switch (answer){
+            case "D", "d" -> points++;
+        }
+    }
+
+
+    public static void question13() {
+        String answer = JOptionPane.showInputDialog(null, "Question 4 of 6:\n" +
+                "Which of the following countries is in Asia?\n" +
+                "A. Japan\n" +
+                "B. Ukraine\n" +
+                "C. All of the above.\n" +
+                "D. None of the above.");
+        switch (answer){
+            case "A", "a" -> points++;
+        }
+    }
+
+
+    public static void question14() {
+        String answer = JOptionPane.showInputDialog(null, "Question 4 of 8:\n" +
+                "How many countries have purple on their flag?\n" +
+                "A. 3\n" +
+                "B. 1\n" +
+                "C. 2\n" +
+                "D. 0");
+        switch (answer){
+            case "A", "a" -> points++;
+        }
+    }
+
+
+    public static void question15() {
+        String answer = JOptionPane.showInputDialog(null, "Question 5 of 8:\n" +
+                "Which country produces the most oil?\n" +
+                "A. The United States of America\n" +
+                "B. Russia\n" +
+                "C. Saudi Arabia\n" +
+                "D. Canada");
+        switch (answer){
+            case "A", "a" -> points++;
+        }
+    }
+        public static void question16() {
+        String answer = JOptionPane.showInputDialog(null, "Question 6 of 8:\n" +
+                "What is the youngest country in the World?\n" +
+                "A. North Sudan\n" +
+                "B. South Sudan\n" +
+                "C. Liberia\n" +
+                "D. None of the above");
+        switch (answer){
+            case "B", "b" -> points++;
+        }
+    }
+        public static void question17() {
+        String answer = JOptionPane.showInputDialog(null, "Question 7 of 8:\n" +
+                "How many countries were part of the Soviet Union?\n" +
+                "A. 12\n" +
+                "B. 13\n" +
+                "C. 15\n" +
+                "D. 16");
+        switch (answer){
+            case "C", "c" -> points++;
+        }
+    }
+        public static void question18() {
+        String answer = JOptionPane.showInputDialog(null, "Question 8 of 8:\n" +
+                "Which of the following empires was the largest by land?\n" +
+                "A. The British Empire\n" +
+                "B. The French Empire\n" +
+                "C. The Spanish Empire\n" +
+                "D. Empire of Japan");
+        switch (answer){
+            case "A", "a" -> points++;
+        }
+    }
+        public static void question19() {
+        String answer = JOptionPane.showInputDialog(null, "Question 5 of 6:\n" +
+                "Germany is South of Denmark.\n" +
+                "A. True\n" +
+                "B. False");
+        switch (answer){
+            case "A", "a" -> points++;
+        }
+    }
+        public static void question20() {
+        String answer = JOptionPane.showInputDialog(null, "Question 6 of 6:\n" +
+                "How many countries does India border?\n" +
+                "A. 8\n" +
+                "B. 3\n" +
+                "C. 7\n" +
+                "D. 11");
+        switch (answer){
+            case "C", "c" -> points++;
+        }
+    }
+    public static int result1() {
+        String name = JOptionPane.showInputDialog(null,"You finished the quiz.\n"
+                + "Enter your name.");
+        if (points == 6)
+        {
+            JOptionPane.showMessageDialog(null, "Name: " + name + "\nTotal Score: " + points +"/6"+"\n Perfect Score!");
+        }else if(points >= 3) {
+            JOptionPane.showMessageDialog(null, "Name: " + name + "\nTotal Score: " + points +"/6"+ "\n Pass");
+        }else{
+            JOptionPane.showMessageDialog(null, "Name: " + name + "\nTotal Score: " + points +"/6"+"\n Fail");
+        }
+        String answer = JOptionPane.showInputDialog(null,"Do you want to Restart or End the quiz?\n" +
+        "Enter (Y) to restart the quiz\n" +
+        "Enter (N) to end the quiz");
+        switch (answer){
+            case "Y","y" -> Quiz(); 
+            case "N","n" -> System.exit(0);
+}
+        
+    return 0;
+    }
+    public static int result2() {
+        String name = JOptionPane.showInputDialog(null,"You finished the quiz.\n"
+                + "Enter your name.");
+        if (points == 6)
+        {
+            JOptionPane.showMessageDialog(null, "Name: " + name + "\nTotal Score: " + points +"/6"+ "\n Perfect Score!");
+        }else if(points >= 3) {
+            JOptionPane.showMessageDialog(null, "Name: " + name + "\nTotal Score: " + points +"/6"+"\n Pass");
+        }else{
+            JOptionPane.showMessageDialog(null, "Name: " + name + "\nTotal Score: " + points +"/6"+"\n Fail");
+        }
+        String answer = JOptionPane.showInputDialog(null,"Do you want to Restart or End the quiz?\n" +
+        "Enter (Y) to restart the quiz\n" +
+        "Enter (N) to end the quiz");
+        switch (answer){
+            case "Y","y" -> Quiz(); 
+            case "N","n" -> System.exit(0);
+}
+        
+    return 0;
+    }
+    public static int result3() {
+        String name = JOptionPane.showInputDialog(null,"You finished the quiz.\n"
+                + "Enter your name.");
+        if (points == 8)
+        {
+            JOptionPane.showMessageDialog(null, "Name: " + name + "\nTotal Score: " + points +"/8"+ "\n Perfect Score!");
+        }else if(points >= 4) {
+            JOptionPane.showMessageDialog(null, "Name: " + name + "\nTotal Score: " + points +"/8"+ "\n Pass");
+        }else{
+            JOptionPane.showMessageDialog(null, "Name: " + name + "\nTotal Score: " + points +"/8"+ "\n Fail");
+        }
+        String answer = JOptionPane.showInputDialog(null,"Do you want to Restart or End the quiz?\n" +
+        "Enter (Y) to restart the quiz\n" +
+        "Enter (N) to end the quiz");
+        switch (answer){
+            case "Y","y" -> Quiz(); 
+            case "N","n" -> System.exit(0);
+}
+        
+    return 0;
+    }
+    public static void Quiz() {
+        Quiz.points = 0;
+        quiz();
+    }
+
+
+    public static void quiz() {
+        String answer = JOptionPane.showInputDialog(null, "Welcome to Isaac's Geography Quiz.\n"+
+                "Select difficulty\n"+
+                "A. Easy\n" +
+                "B. Medium\n" +
+                "C. Hard");
+        switch (answer){
+            case "A", "a" -> easy();
+            case "B", "b" -> medium();
+            case "C", "c" -> hard();        
+    }
+    }
+}

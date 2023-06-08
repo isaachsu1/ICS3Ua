@@ -1,0 +1,43 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.exam;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author isaac
+ */
+public class Exam {
+
+    public static void main(String[] args) {
+        /*
+        We prompt the user to enter a number.
+        */
+        System.out.println("Enter a number below");
+        /*
+        Use scanner to retrieve the value.
+        */
+        Scanner number = new Scanner(System.in);
+        double N = number.nextDouble();
+        
+        /*
+        determine if N is an odd or even number.
+        */
+        double A = N%2;
+        
+        if(A<=0){
+            // print if N is even
+           System.out.println(N+" is an even number"); 
+        }
+        else{
+            // print if N is odd
+            System.out.println(N+" is an odd number");
+        }
+
+        }
+        
+    }
